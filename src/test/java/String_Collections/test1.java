@@ -2,7 +2,7 @@ package String_Collections;
 
 import java.util.HashMap;
 
-public class Main {
+public class test1 {
     public static void main(String[] args) {
         String str = "My name is Sourav Kumar Padhi";//a,y,m
         test(str);
