@@ -15,7 +15,7 @@ public class groupAnagramWords {
         return new ArrayList<>(map.values());
     }
     public static void main(String[] args) {
-        String [] strArr = {"Bat","Tab","tap","Pat","fried","FiRed","like"};
+        String [] strArr = {"Bat","Tab","tap","Pat","fried","FiRed","like","tOp","POT"};
         System.out.println(anagramWords(strArr));
     }
 }
