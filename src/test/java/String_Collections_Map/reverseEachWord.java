@@ -1,4 +1,4 @@
-package String_Collections;
+package String_Collections_Map;
 
 public class reverseEachWord {
     public static void main (String[] Args){

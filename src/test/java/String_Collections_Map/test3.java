@@ -1,4 +1,4 @@
-package String_Collections;
+package String_Collections_Map;
 import java.util.HashMap;
 
 public class test3 {

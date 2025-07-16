@@ -1,4 +1,4 @@
-package String_Collections;
+package String_Collections_Map;
 
 import java.util.ArrayList;
 public class newArrGivenSum {

@@ -1,6 +1,4 @@
-package String_Collections;
-
-import java.util.Arrays;
+package String_Collections_Map;
 
 public class indexesOfSumInAnArrayUsingTwoForLoop {
     public static void main(String[] Args){
