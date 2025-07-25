@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class findTheSecodMostOccurringLetter {
     public static void main(String[] Args){
-        String str = "ab".toLowerCase();
+        String str = "aaaabbccccc".toLowerCase();
         HashMap<Character, Integer> wordMap = new HashMap<>();
         char[] wordArray = str.toCharArray();
 
