@@ -3,12 +3,12 @@ import java.util.*;
 
 public class shortestLongestWords_group {
     public static void main(String[] args) {
-        String sentence = "My name is Sourav Kumar Padhi, i am working in software industry. i am a very honest guy. i am form pune. Previously I was in Bhubaneswar";
+        String sentence = "My name is Sourav Kumar Padhi, i am working in software industry. i am a very honest guy. i am form pune. Previously I was in Bhubaneswar.";
         String [] arr = sentence.split(" ");
         Map<String, Integer> map = new LinkedHashMap<>();
 
         for(String s : arr){
-            s = s.toLowerCase();
+            s = s.toLowerCase().replaceAll("[^a-zA-Z]","");
             map.put(s, s.length());
         }
         int shortestLen = Integer.MAX_VALUE;
