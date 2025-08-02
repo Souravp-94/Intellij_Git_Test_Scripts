@@ -1,21 +1,21 @@
 package String_Collections_Map;
-
-import java.util.ArrayList;
 import java.util.*;
-
 public class groupAnagramWords {
-    public static List<List<String>> anagramWords (String[] strs) {
-        Map<String, List<String>> map = new HashMap<>();
-        for(String s : strs){
-            char[] c = s.toLowerCase().toCharArray();
+    public static void main(String[] args){
+        String [] arr = {"apt","pat","tap","tank","friend","firEd","fried","kanT"};
+        Map<String, ArrayList<String>> map = new LinkedHashMap<>();
+        for(String s : arr){
+            char [] c = s.toLowerCase().toCharArray();
             Arrays.sort(c);
-            String str = new String(c);
-            map.computeIfAbsent(str,k -> new ArrayList<>()).add(s);
+            String word = new String(c);
+            map.computeIfAbsent(word, k -> new ArrayList<>()).add(s);
         }
-        return new ArrayList<>(map.values());
-    }
-    public static void main(String[] args) {
-        String [] strArr = {"Bat","Tab","tap","Pat","fried","FiRed","like","tOp","POT"};
-        System.out.println(anagramWords(strArr));
+        ArrayList<ArrayList<String>> list = new ArrayList<>();
+        for(ArrayList<String> a : map.values()){
+            if(a.size() > 1){
+                list.add(a);
+            }
+        }
+        System.out.println("Anagram groups are : "+list);
     }
 }
