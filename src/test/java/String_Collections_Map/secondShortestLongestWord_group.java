@@ -2,7 +2,7 @@ package String_Collections_Map;
 import java.util.*;
 public class secondShortestLongestWord_group {
     public static void main(String [] args){
-        String str = "My name is Sourav Kumar Padhi, i am working in softwAre software industry. I am a very honest guy. i am form pune. Previous I was is in Bhubaneswar.";
+        String str = "My name is Sourav Kumar PadhOI, i am working in softwAre software industry. I am a very honest guy. i am form pune. Previous I was is in Bhubaneswar.";
         String [] arr = str.split(" ");
         Map<String, Integer> map = new LinkedHashMap<>();
 
