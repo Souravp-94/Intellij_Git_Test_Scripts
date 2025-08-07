@@ -12,7 +12,6 @@ public class shortest2ndShortestLongest2ndLongest {
             st = st.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
             map.put(st, st.length());
         }
-        System.out.println(map);
 
         int shortest = Integer.MAX_VALUE;
         int secondShortest = Integer.MAX_VALUE;
@@ -35,7 +34,6 @@ public class shortest2ndShortestLongest2ndLongest {
                 secondLongest = i;
             }
         }
-        System.out.println(shortest + " " +secondShortest+ " " +longest+ " " +secondLongest);
 
         ArrayList<String> shortestArr = new ArrayList<>();
         ArrayList<String> secondShortestArr = new ArrayList<>();
