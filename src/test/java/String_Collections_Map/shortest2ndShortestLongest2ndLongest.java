@@ -14,10 +14,10 @@ public class shortest2ndShortestLongest2ndLongest {
         }
         System.out.println(map);
 
-        Integer shortest = Integer.MAX_VALUE;
-        Integer secondShortest = Integer.MAX_VALUE;
-        Integer longest = Integer.MIN_VALUE;
-        Integer secondLongest = Integer.MIN_VALUE;
+        int shortest = Integer.MAX_VALUE;
+        int secondShortest = Integer.MAX_VALUE;
+        int longest = Integer.MIN_VALUE;
+        int secondLongest = Integer.MIN_VALUE;
 
         for(int i : map.values()){
             if(i < shortest){
@@ -43,16 +43,16 @@ public class shortest2ndShortestLongest2ndLongest {
         ArrayList<String> secondLongestArr = new ArrayList<>();
 
         for(Map.Entry<String, Integer> m : map.entrySet()){
-            if(m.getValue() == shortest){
+            if(m.getValue().equals(shortest)){
                 shortestArr.add(m.getKey());
             }
-            if(m.getValue() == secondShortest){
+            if(m.getValue().equals(secondShortest)){
                 secondShortestArr.add(m.getKey());
             }
-            if(m.getValue() == longest){
+            if(m.getValue().equals(longest)){
                 longestArr.add(m.getKey());
             }
-            if(m.getValue() == secondLongest){
+            if(m.getValue().equals(secondLongest)){
                 secondLongestArr.add(m.getKey());
             }
         }
