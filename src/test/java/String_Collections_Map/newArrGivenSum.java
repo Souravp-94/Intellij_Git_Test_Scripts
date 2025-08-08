@@ -4,7 +4,7 @@ import java.util.*;
 
 public class newArrGivenSum {
         public static void main(String[] args) {
-            int[] arr = {10, 6, 89, 97, 13, 3};
+            int[] arr = {10, 6, 89, 97, 13, 3,3,16,16,3};
             int targetSum = 16;
             Set<ArrayList<Integer>> result = findNumbersWithSum(arr, targetSum);
 
